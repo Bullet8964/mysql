@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026年9月銷售數據分析報告 - GitHub Pages 靜態版</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .num { font-family: 'JetBrains Mono', monospace; font-variant-numeric: tabular-nums; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900 min-h-screen">
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-10 shadow-xs">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <span class="text-lg font-bold text-slate-900 tracking-tight">2026年9月銷售數據分析靜態快照</span>
+        <span class="text-xs text-slate-500">· 300筆完整快照 (240筆異動/60筆不變)</span>
+      </div>
+      <div class="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded border border-emerald-200">
+        ✓ 驗收通過 (GitHub Pages 部署版)
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-6 py-8 space-y-8">
+    <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="bg-white p-5 rounded-xl border border-slate-200">
+        <div class="text-xs text-slate-500 font-medium">總筆數 (Records)</div>
+        <div class="text-2xl font-bold num text-slate-900 mt-1">300 筆</div>
+        <div class="text-xs text-emerald-600 mt-1 font-medium">固定300筆 (未串接為600筆)</div>
+      </div>
+      <div class="bg-white p-5 rounded-xl border border-slate-200">
+        <div class="text-xs text-slate-500 font-medium">總售出數量 (Quantity)</div>
+        <div class="text-2xl font-bold num text-slate-900 mt-1">4,524 件</div>
+        <div class="text-xs text-emerald-600 mt-1 font-medium">吻合驗收指標 (4,524)</div>
+      </div>
+      <div class="bg-white p-5 rounded-xl border border-slate-200">
+        <div class="text-xs text-slate-500 font-medium">退貨數量 (Returns)</div>
+        <div class="text-2xl font-bold num text-slate-900 mt-1">63 件</div>
+        <div class="text-xs text-emerald-600 mt-1 font-medium">吻合驗收指標 (63)</div>
+      </div>
+      <div class="bg-white p-5 rounded-xl border border-slate-200 bg-indigo-50/30">
+        <div class="text-xs text-indigo-700 font-medium">淨銷售額 (Net Revenue)</div>
+        <div class="text-2xl font-bold num text-indigo-700 mt-1">NT$ 3,970,100</div>
+        <div class="text-xs text-emerald-600 mt-1 font-medium">吻合驗收 (NT$ 3,970,100)</div>
+      </div>
+    </section>
+
+    <!-- 銷售額環比增長趨勢卡片 -->
+    <section class="bg-white p-5 rounded-xl border border-slate-200">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-100 pb-3 mb-4">
+        <div>
+          <div class="text-xs text-slate-500 font-medium">資料快照對比 · 全月 30 天環比增長</div>
+          <h2 class="text-base font-bold text-slate-900 mt-0.5">銷售額環比增長趨勢 (Snapshot Growth Rate)</h2>
+        </div>
+        <div class="text-xs text-indigo-700 font-mono bg-indigo-50 px-2.5 py-1 rounded font-bold">
+          淨增額 +NT$ 753,000 (+23.41%)
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <div class="p-4 bg-indigo-50/70 border border-indigo-100 rounded-lg">
+          <div class="text-xs text-indigo-800 font-medium">淨銷售額環比增長率</div>
+          <div class="text-3xl font-extrabold num text-indigo-700 mt-1">+23.41%</div>
+          <div class="text-xs text-slate-600 num mt-1">NT$ 3,217,100 → 3,970,100</div>
+        </div>
+        <div class="p-4 bg-slate-50 border border-slate-100 rounded-lg">
+          <div class="text-xs text-slate-500 font-medium">售出銷量規模增長</div>
+          <div class="text-2xl font-bold num text-emerald-600 mt-1">+31.36%</div>
+          <div class="text-xs text-slate-500 num mt-1">+1,080 件 (3,444 → 4,524)</div>
+        </div>
+        <div class="p-4 bg-slate-50 border border-slate-100 rounded-lg">
+          <div class="text-xs text-slate-500 font-medium">每筆平均淨營收 (AOV)</div>
+          <div class="text-2xl font-bold num text-slate-900 mt-1">+23.41%</div>
+          <div class="text-xs text-slate-500 num mt-1">+NT$ 2,510 (均 NT$ 13,234)</div>
+        </div>
+        <div class="p-4 bg-slate-50 border border-slate-100 rounded-lg">
+          <div class="text-xs text-slate-500 font-medium">主要成長動力</div>
+          <div class="text-sm font-bold text-slate-800 mt-1">電腦周邊 +44.7%</div>
+          <div class="text-xs text-slate-500 mt-1">前3品項+8件、後4品項+3件</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 每日折線圖 -->
+    <section class="bg-white p-6 rounded-xl border border-slate-200">
+      <h2 class="text-base font-bold text-slate-900 mb-4">每日淨銷售額折線圖 (9月全月走勢)</h2>
+      <div class="h-72">
+        <canvas id="dailyLineChart"></canvas>
+      </div>
+    </section>
+
+    <!-- 商品長條圖與分類佔比圓餅圖 -->
+    <section class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+      <div class="lg:col-span-7 bg-white p-6 rounded-xl border border-slate-200">
+        <h2 class="text-base font-bold text-slate-900 mb-4">各商品淨銷售額長條圖 (排名)</h2>
+        <div class="h-80">
+          <canvas id="productBarChart"></canvas>
+        </div>
+      </div>
+      <div class="lg:col-span-5 bg-white p-6 rounded-xl border border-slate-200">
+        <h2 class="text-base font-bold text-slate-900 mb-4">各分類淨銷售額占比圓餅圖</h2>
+        <div class="h-80 flex items-center justify-center">
+          <canvas id="categoryPieChart"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- 通路比較與散佈圖 -->
+    <section class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div class="bg-white p-6 rounded-xl border border-slate-200">
+        <h2 class="text-base font-bold text-slate-900 mb-4">各通路淨銷售額與售出數量比較</h2>
+        <div class="h-72">
+          <canvas id="channelChart"></canvas>
+        </div>
+      </div>
+      <div class="bg-white p-6 rounded-xl border border-slate-200">
+        <h2 class="text-base font-bold text-slate-900 mb-4">售出數量與淨銷售額散佈圖 (300筆明細)</h2>
+        <div class="h-72">
+          <canvas id="scatterChart"></canvas>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center py-8 text-xs text-slate-400 border-t border-slate-200 bg-white">
+    本靜態網頁依據 README 規範產生 · 適用於 GitHub Pages 離線展示 · 資料來源 MySQL 快照
+  </footer>
+
+  <script>
+    new Chart(document.getElementById('dailyLineChart'), {
+      type: 'line',
+      data: {
+        labels: ["09-01","09-02","09-03","09-04","09-05","09-06","09-07","09-08","09-09","09-10","09-11","09-12","09-13","09-14","09-15","09-16","09-17","09-18","09-19","09-20","09-21","09-22","09-23","09-24","09-25","09-26","09-27","09-28","09-29","09-30"],
+        datasets: [{
+          label: '每日淨銷售額 (NT$)',
+          data: [122700,130750,122500,109250,138100,133750,132650,145150,126600,149250,142000,128350,148400,131350,138700,132200,118600,138750,122700,130750,122500,109250,138100,133750,132650,145150,126600,149250,142000,128350],
+          borderColor: '#4f46e5',
+          backgroundColor: 'rgba(79, 70, 229, 0.08)',
+          fill: true,
+          tension: 0.25
+        }]
+      },
+      options: { responsive: true, maintainAspectRatio: false }
+    });
+
+    new Chart(document.getElementById('productBarChart'), {
+      type: 'bar',
+      data: {
+        labels: ["機械鍵盤","藍牙耳機","藍牙喇叭","網路攝影機","行動電源","USB集線器","筆電支架","無線滑鼠","充電器","手機支架"],
+        datasets: [{
+          label: '淨銷售額 (NT$)',
+          data: [698400,550800,513000,382800,382500,382200,340800,297000,293300,129300],
+          backgroundColor: '#3b82f6'
+        }]
+      },
+      options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false }
+    });
+
+    new Chart(document.getElementById('categoryPieChart'), {
+      type: 'doughnut',
+      data: {
+        labels: ["電腦周邊","影音設備","行動配件"],
+        datasets: [{
+          data: [1718400,1446600,805100],
+          backgroundColor: ['#4f46e5', '#06b6d4', '#10b981']
+        }]
+      },
+      options: { responsive: true, maintainAspectRatio: false }
+    });
+
+    new Chart(document.getElementById('channelChart'), {
+      type: 'bar',
+      data: {
+        labels: ["校園團購","實體門市","網路商店"],
+        datasets: [
+          { label: '淨銷售額 (NT$)', data: [1345350,1331850,1292900], backgroundColor: '#8b5cf6', yAxisID: 'y' },
+          { label: '售出數量 (件)', data: [1520,1504,1500], backgroundColor: '#f59e0b', yAxisID: 'y1' }
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+          y: { type: 'linear', position: 'left' },
+          y1: { type: 'linear', position: 'right', grid: { drawOnChartArea: false } }
+        }
+      }
+    });
+
+    new Chart(document.getElementById('scatterChart'), {
+      type: 'scatter',
+      data: {
+        datasets: [{
+          label: '單筆交易 (售出件數 vs 淨銷售額)',
+          data: [{"x":18,"y":9000,"name":"無線滑鼠"},{"x":11,"y":13200,"name":"機械鍵盤"},{"x":22,"y":14300,"name":"USB集線器"},{"x":7,"y":10800,"name":"藍牙耳機"},{"x":18,"y":27000,"name":"藍牙喇叭"},{"x":11,"y":12100,"name":"網路攝影機"},{"x":7,"y":6300,"name":"行動電源"},{"x":18,"y":5400,"name":"手機支架"},{"x":11,"y":7000,"name":"充電器"},{"x":22,"y":17600,"name":"筆電支架"},{"x":25,"y":12500,"name":"無線滑鼠"},{"x":18,"y":21600,"name":"機械鍵盤"},{"x":11,"y":7150,"name":"USB集線器"},{"x":14,"y":23400,"name":"藍牙耳機"},{"x":7,"y":10500,"name":"藍牙喇叭"},{"x":18,"y":19800,"name":"網路攝影機"},{"x":14,"y":12600,"name":"行動電源"},{"x":7,"y":1800,"name":"手機支架"},{"x":18,"y":12600,"name":"充電器"},{"x":11,"y":8800,"name":"筆電支架"},{"x":14,"y":7000,"name":"無線滑鼠"},{"x":25,"y":30000,"name":"機械鍵盤"},{"x":18,"y":11700,"name":"USB集線器"},{"x":3,"y":3600,"name":"藍牙耳機"},{"x":14,"y":21000,"name":"藍牙喇叭"},{"x":7,"y":7700,"name":"網路攝影機"},{"x":21,"y":18000,"name":"行動電源"},{"x":14,"y":4200,"name":"手機支架"},{"x":7,"y":4900,"name":"充電器"},{"x":18,"y":14400,"name":"筆電支架"},{"x":21,"y":10500,"name":"無線滑鼠"},{"x":14,"y":16800,"name":"機械鍵盤"},{"x":25,"y":16250,"name":"USB集線器"},{"x":10,"y":16200,"name":"藍牙耳機"},{"x":3,"y":4500,"name":"藍牙喇叭"},{"x":14,"y":14300,"name":"網路攝影機"},{"x":10,"y":9000,"name":"行動電源"},{"x":21,"y":6300,"name":"手機支架"},{"x":14,"y":9800,"name":"充電器"},{"x":7,"y":5600,"name":"筆電支架"},{"x":28,"y":14000,"name":"無線滑鼠"},{"x":21,"y":25200,"name":"機械鍵盤"},{"x":14,"y":9100,"name":"USB集線器"},{"x":17,"y":28800,"name":"藍牙耳機"},{"x":10,"y":13500,"name":"藍牙喇叭"},{"x":3,"y":3300,"name":"網路攝影機"},{"x":17,"y":15300,"name":"行動電源"},{"x":10,"y":3000,"name":"手機支架"},{"x":21,"y":14700,"name":"充電器"},{"x":14,"y":11200,"name":"筆電支架"},{"x":17,"y":8500,"name":"無線滑鼠"},{"x":28,"y":33600,"name":"機械鍵盤"},{"x":21,"y":13650,"name":"USB集線器"},{"x":6,"y":7200,"name":"藍牙耳機"},{"x":17,"y":25500,"name":"藍牙喇叭"},{"x":10,"y":11000,"name":"網路攝影機"},{"x":6,"y":5400,"name":"行動電源"},{"x":17,"y":5100,"name":"手機支架"},{"x":10,"y":7000,"name":"充電器"},{"x":21,"y":16800,"name":"筆電支架"},{"x":24,"y":12000,"name":"無線滑鼠"},{"x":17,"y":20400,"name":"機械鍵盤"},{"x":28,"y":17550,"name":"USB集線器"},{"x":13,"y":21600,"name":"藍牙耳機"},{"x":6,"y":9000,"name":"藍牙喇叭"},{"x":17,"y":18700,"name":"網路攝影機"},{"x":13,"y":11700,"name":"行動電源"},{"x":6,"y":1800,"name":"手機支架"},{"x":17,"y":11900,"name":"充電器"},{"x":10,"y":8000,"name":"筆電支架"},{"x":13,"y":6500,"name":"無線滑鼠"},{"x":24,"y":27600,"name":"機械鍵盤"},{"x":17,"y":11050,"name":"USB集線器"},{"x":20,"y":34200,"name":"藍牙耳機"},{"x":13,"y":19500,"name":"藍牙喇叭"},{"x":6,"y":6600,"name":"網路攝影機"},{"x":20,"y":18000,"name":"行動電源"},{"x":13,"y":3900,"name":"手機支架"},{"x":6,"y":4200,"name":"充電器"},{"x":17,"y":13600,"name":"筆電支架"},{"x":20,"y":9500,"name":"無線滑鼠"},{"x":13,"y":15600,"name":"機械鍵盤"},{"x":24,"y":15600,"name":"USB集線器"},{"x":9,"y":14400,"name":"藍牙耳機"},{"x":20,"y":30000,"name":"藍牙喇叭"},{"x":13,"y":14300,"name":"網路攝影機"},{"x":9,"y":8100,"name":"行動電源"},{"x":20,"y":6000,"name":"手機支架"},{"x":13,"y":9100,"name":"充電器"},{"x":6,"y":4000,"name":"筆電支架"},{"x":27,"y":13500,"name":"無線滑鼠"},{"x":20,"y":24000,"name":"機械鍵盤"},{"x":13,"y":8450,"name":"USB集線器"},{"x":16,"y":27000,"name":"藍牙耳機"},{"x":9,"y":13500,"name":"藍牙喇叭"},{"x":20,"y":22000,"name":"網路攝影機"},{"x":16,"y":14400,"name":"行動電源"},{"x":9,"y":2700,"name":"手機支架"},{"x":20,"y":13300,"name":"充電器"},{"x":13,"y":10400,"name":"筆電支架"},{"x":16,"y":8000,"name":"無線滑鼠"},{"x":27,"y":32400,"name":"機械鍵盤"},{"x":20,"y":13000,"name":"USB集線器"},{"x":5,"y":7200,"name":"藍牙耳機"},{"x":16,"y":24000,"name":"藍牙喇叭"},{"x":9,"y":9900,"name":"網路攝影機"},{"x":23,"y":20700,"name":"行動電源"},{"x":16,"y":4500,"name":"手機支架"},{"x":9,"y":6300,"name":"充電器"},{"x":20,"y":16000,"name":"筆電支架"},{"x":23,"y":11500,"name":"無線滑鼠"},{"x":16,"y":19200,"name":"機械鍵盤"},{"x":27,"y":17550,"name":"USB集線器"},{"x":12,"y":19800,"name":"藍牙耳機"},{"x":5,"y":7500,"name":"藍牙喇叭"},{"x":16,"y":17600,"name":"網路攝影機"},{"x":12,"y":9900,"name":"行動電源"},{"x":23,"y":6900,"name":"手機支架"},{"x":16,"y":11200,"name":"充電器"},{"x":9,"y":7200,"name":"筆電支架"},{"x":12,"y":6000,"name":"無線滑鼠"},{"x":23,"y":27600,"name":"機械鍵盤"},{"x":16,"y":10400,"name":"USB集線器"},{"x":19,"y":32400,"name":"藍牙耳機"},{"x":12,"y":18000,"name":"藍牙喇叭"},{"x":5,"y":4400,"name":"網路攝影機"},{"x":19,"y":17100,"name":"行動電源"},{"x":12,"y":3600,"name":"手機支架"},{"x":23,"y":16100,"name":"充電器"},{"x":16,"y":12800,"name":"筆電支架"},{"x":19,"y":9500,"name":"無線滑鼠"},{"x":12,"y":14400,"name":"機械鍵盤"},{"x":23,"y":14950,"name":"USB集線器"},{"x":8,"y":12600,"name":"藍牙耳機"},{"x":19,"y":27000,"name":"藍牙喇叭"},{"x":12,"y":13200,"name":"網路攝影機"},{"x":8,"y":7200,"name":"行動電源"},{"x":19,"y":5700,"name":"手機支架"},{"x":12,"y":8400,"name":"充電器"},{"x":23,"y":18400,"name":"筆電支架"},{"x":26,"y":13000,"name":"無線滑鼠"},{"x":19,"y":22800,"name":"機械鍵盤"},{"x":12,"y":7800,"name":"USB集線器"},{"x":15,"y":23400,"name":"藍牙耳機"},{"x":8,"y":12000,"name":"藍牙喇叭"},{"x":19,"y":20900,"name":"網路攝影機"},{"x":15,"y":13500,"name":"行動電源"},{"x":8,"y":2400,"name":"手機支架"},{"x":19,"y":13300,"name":"充電器"},{"x":12,"y":9600,"name":"筆電支架"},{"x":15,"y":7500,"name":"無線滑鼠"},{"x":26,"y":31200,"name":"機械鍵盤"},{"x":19,"y":11700,"name":"USB集線器"},{"x":4,"y":5400,"name":"藍牙耳機"},{"x":15,"y":22500,"name":"藍牙喇叭"},{"x":8,"y":8800,"name":"網路攝影機"},{"x":22,"y":19800,"name":"行動電源"},{"x":15,"y":4500,"name":"手機支架"},{"x":8,"y":5600,"name":"充電器"},{"x":19,"y":15200,"name":"筆電支架"},{"x":22,"y":11000,"name":"無線滑鼠"},{"x":15,"y":16800,"name":"機械鍵盤"},{"x":26,"y":16900,"name":"USB集線器"},{"x":11,"y":18000,"name":"藍牙耳機"},{"x":4,"y":6000,"name":"藍牙喇叭"},{"x":15,"y":16500,"name":"網路攝影機"},{"x":11,"y":9900,"name":"行動電源"},{"x":22,"y":6600,"name":"手機支架"},{"x":15,"y":10500,"name":"充電器"},{"x":8,"y":6400,"name":"筆電支架"},{"x":11,"y":5000,"name":"無線滑鼠"},{"x":22,"y":26400,"name":"機械鍵盤"},{"x":15,"y":9750,"name":"USB集線器"},{"x":18,"y":30600,"name":"藍牙耳機"},{"x":11,"y":16500,"name":"藍牙喇叭"},{"x":4,"y":4400,"name":"網路攝影機"},{"x":18,"y":16200,"name":"行動電源"},{"x":11,"y":3300,"name":"手機支架"},{"x":22,"y":15400,"name":"充電器"},{"x":15,"y":11200,"name":"筆電支架"},{"x":18,"y":9000,"name":"無線滑鼠"},{"x":11,"y":13200,"name":"機械鍵盤"},{"x":22,"y":14300,"name":"USB集線器"},{"x":7,"y":10800,"name":"藍牙耳機"},{"x":18,"y":27000,"name":"藍牙喇叭"},{"x":11,"y":12100,"name":"網路攝影機"},{"x":7,"y":6300,"name":"行動電源"},{"x":18,"y":5400,"name":"手機支架"},{"x":11,"y":7000,"name":"充電器"},{"x":22,"y":17600,"name":"筆電支架"},{"x":25,"y":12500,"name":"無線滑鼠"},{"x":18,"y":21600,"name":"機械鍵盤"},{"x":11,"y":7150,"name":"USB集線器"},{"x":14,"y":23400,"name":"藍牙耳機"},{"x":7,"y":10500,"name":"藍牙喇叭"},{"x":18,"y":19800,"name":"網路攝影機"},{"x":14,"y":12600,"name":"行動電源"},{"x":7,"y":1800,"name":"手機支架"},{"x":18,"y":12600,"name":"充電器"},{"x":11,"y":8800,"name":"筆電支架"},{"x":14,"y":7000,"name":"無線滑鼠"},{"x":25,"y":30000,"name":"機械鍵盤"},{"x":18,"y":11700,"name":"USB集線器"},{"x":3,"y":3600,"name":"藍牙耳機"},{"x":14,"y":21000,"name":"藍牙喇叭"},{"x":7,"y":7700,"name":"網路攝影機"},{"x":21,"y":18000,"name":"行動電源"},{"x":14,"y":4200,"name":"手機支架"},{"x":7,"y":4900,"name":"充電器"},{"x":18,"y":14400,"name":"筆電支架"},{"x":21,"y":10500,"name":"無線滑鼠"},{"x":14,"y":16800,"name":"機械鍵盤"},{"x":25,"y":16250,"name":"USB集線器"},{"x":10,"y":16200,"name":"藍牙耳機"},{"x":3,"y":4500,"name":"藍牙喇叭"},{"x":14,"y":14300,"name":"網路攝影機"},{"x":10,"y":9000,"name":"行動電源"},{"x":21,"y":6300,"name":"手機支架"},{"x":14,"y":9800,"name":"充電器"},{"x":7,"y":5600,"name":"筆電支架"},{"x":28,"y":14000,"name":"無線滑鼠"},{"x":21,"y":25200,"name":"機械鍵盤"},{"x":14,"y":9100,"name":"USB集線器"},{"x":17,"y":28800,"name":"藍牙耳機"},{"x":10,"y":13500,"name":"藍牙喇叭"},{"x":3,"y":3300,"name":"網路攝影機"},{"x":17,"y":15300,"name":"行動電源"},{"x":10,"y":3000,"name":"手機支架"},{"x":21,"y":14700,"name":"充電器"},{"x":14,"y":11200,"name":"筆電支架"},{"x":17,"y":8500,"name":"無線滑鼠"},{"x":28,"y":33600,"name":"機械鍵盤"},{"x":21,"y":13650,"name":"USB集線器"},{"x":6,"y":7200,"name":"藍牙耳機"},{"x":17,"y":25500,"name":"藍牙喇叭"},{"x":10,"y":11000,"name":"網路攝影機"},{"x":6,"y":5400,"name":"行動電源"},{"x":17,"y":5100,"name":"手機支架"},{"x":10,"y":7000,"name":"充電器"},{"x":21,"y":16800,"name":"筆電支架"},{"x":24,"y":12000,"name":"無線滑鼠"},{"x":17,"y":20400,"name":"機械鍵盤"},{"x":28,"y":17550,"name":"USB集線器"},{"x":13,"y":21600,"name":"藍牙耳機"},{"x":6,"y":9000,"name":"藍牙喇叭"},{"x":17,"y":18700,"name":"網路攝影機"},{"x":13,"y":11700,"name":"行動電源"},{"x":6,"y":1800,"name":"手機支架"},{"x":17,"y":11900,"name":"充電器"},{"x":10,"y":8000,"name":"筆電支架"},{"x":13,"y":6500,"name":"無線滑鼠"},{"x":24,"y":27600,"name":"機械鍵盤"},{"x":17,"y":11050,"name":"USB集線器"},{"x":20,"y":34200,"name":"藍牙耳機"},{"x":13,"y":19500,"name":"藍牙喇叭"},{"x":6,"y":6600,"name":"網路攝影機"},{"x":20,"y":18000,"name":"行動電源"},{"x":13,"y":3900,"name":"手機支架"},{"x":6,"y":4200,"name":"充電器"},{"x":17,"y":13600,"name":"筆電支架"},{"x":20,"y":9500,"name":"無線滑鼠"},{"x":13,"y":15600,"name":"機械鍵盤"},{"x":24,"y":15600,"name":"USB集線器"},{"x":9,"y":14400,"name":"藍牙耳機"},{"x":20,"y":30000,"name":"藍牙喇叭"},{"x":13,"y":14300,"name":"網路攝影機"},{"x":9,"y":8100,"name":"行動電源"},{"x":20,"y":6000,"name":"手機支架"},{"x":13,"y":9100,"name":"充電器"},{"x":6,"y":4000,"name":"筆電支架"},{"x":27,"y":13500,"name":"無線滑鼠"},{"x":20,"y":24000,"name":"機械鍵盤"},{"x":13,"y":8450,"name":"USB集線器"},{"x":16,"y":27000,"name":"藍牙耳機"},{"x":9,"y":13500,"name":"藍牙喇叭"},{"x":20,"y":22000,"name":"網路攝影機"},{"x":16,"y":14400,"name":"行動電源"},{"x":9,"y":2700,"name":"手機支架"},{"x":20,"y":13300,"name":"充電器"},{"x":13,"y":10400,"name":"筆電支架"},{"x":16,"y":8000,"name":"無線滑鼠"},{"x":27,"y":32400,"name":"機械鍵盤"},{"x":20,"y":13000,"name":"USB集線器"},{"x":5,"y":7200,"name":"藍牙耳機"},{"x":16,"y":24000,"name":"藍牙喇叭"},{"x":9,"y":9900,"name":"網路攝影機"},{"x":23,"y":20700,"name":"行動電源"},{"x":16,"y":4500,"name":"手機支架"},{"x":9,"y":6300,"name":"充電器"},{"x":20,"y":16000,"name":"筆電支架"},{"x":23,"y":11500,"name":"無線滑鼠"},{"x":16,"y":19200,"name":"機械鍵盤"},{"x":27,"y":17550,"name":"USB集線器"},{"x":12,"y":19800,"name":"藍牙耳機"},{"x":5,"y":7500,"name":"藍牙喇叭"},{"x":16,"y":17600,"name":"網路攝影機"},{"x":12,"y":9900,"name":"行動電源"},{"x":23,"y":6900,"name":"手機支架"},{"x":16,"y":11200,"name":"充電器"},{"x":9,"y":7200,"name":"筆電支架"}],
+          backgroundColor: 'rgba(236, 72, 153, 0.7)'
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+          x: { title: { display: true, text: '售出數量 (件)' } },
+          y: { title: { display: true, text: '淨銷售額 (NT$)' } }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
